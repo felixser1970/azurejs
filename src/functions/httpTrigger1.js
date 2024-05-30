@@ -15,6 +15,7 @@ const blobServiceClient = new BlobServiceClient(
 );
 
 
+ // PARA CONECTARSE A LA BASE DE DATOS
 async function connectToDatabase() {
     try {
       await sql.connect('Server=sqltef.database.windows.net,1433;Database=general;User Id=felix;Password=Astorga2024;Encrypt=true');
