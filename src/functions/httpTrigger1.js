@@ -73,7 +73,7 @@ app.http('httpTrigger1', {
 
         if (functionKey) {
 
-            if (functionKey === 'yjFXycwSS4NlwtoOZpKrmHWN0LHbEBFvULwdzAEE8-tZAzFuRQN6EA==') {
+            if (functionKey === 'kF8O3OkPvJ9Inw4JvsA8+DmcttQvLnPBpyjNBgMdIJ2LWYwUGKeHVg==') {
 
                 const salida =  await (async () => {
                     var nombres = ''
@@ -93,7 +93,7 @@ app.http('httpTrigger1', {
                     }
                 })();
 
-                return { body: `Hola,${name} Todos los nombres =  ${salida}!` };
+                return { body: `Hola,${name} Todos los nombres =  ${salida}` };
             } else {
                 return { status: 401, body: 'Clave de función no válida.' };
             } 
