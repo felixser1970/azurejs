@@ -71,9 +71,9 @@ app.http('httpTrigger1', {
         const functionKey = request.headers.get('x-functions-key');
         const name = request.query.get('name') || await request.text() || 'No Name';
 
-        if (functionKey) {
+        if (functionKey) {  // key del API -> kF8O3OkPvJ9Inw4JvsA8+DmcttQvLnPBpyjNBgMdIJ2LWYwUGKeHVg==
 
-            if (functionKey === 'kF8O3OkPvJ9Inw4JvsA8+DmcttQvLnPBpyjNBgMdIJ2LWYwUGKeHVg==') {
+            if (functionKey === 'yjFXycwSS4NlwtoOZpKrmHWN0LHbEBFvULwdzAEE8-tZAzFuRQN6EA==') {
 
                 const salida =  await (async () => {
                     var nombres = ''
